@@ -1,0 +1,67 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Lista de utilizatori</title>-->
+<!--</head>-->
+<!--<tr>-->
+<!--<td width = '300px' style="border: 0px">-->
+    <!--{% for utilizator in utilizatori %}-->
+        <!--<a href = "#"> {{utilizator.first_name}}<br/></a>-->
+    <!--{% endfor %}-->
+<!--</td>-->
+
+<!--</tr>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--#&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Lista Utilizatori</h2>
+
+<table>
+  <tr>
+    <th>First_name</th>
+    <th>Last_name</th>
+    <th>Number_of_Login</th>
+  </tr>
+  <tr>
+    <td width = '300px' style="border: 0px">
+    {% for utilizator in utilizatori %}
+        <a href = "#"> {{utilizator.first_name}}<br/></a>
+    {% endfor %}
+    </td>
+    <td width = '300px' style="border: 0px">
+    {% for utilizator in utilizatori %}
+        <a href = "#"> {{utilizator.last_name}}<br/></a>
+    {% endfor %}
+    </td>
+    <td width = '300px' style="border: 0px">
+    {% for utilizator in utilizatori %}
+        <a href = "#"> {{utilizator.number_of_login}}<br/></a>
+    {% endfor %}
+    </td>
+  </tr>
